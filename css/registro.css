@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #2288ff;
+    --second-color: #192f6a;
+    --text-color: #314862;
+    --bg-color: #fff;
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-red: #da0f3f;
+    --color-red-light: hsl(346, 87%, 46%, 15%);
+    --color-green: #00c476;
+    --color-green-light: hsl(156, 100%, 38%, 15%);
+    --color-white: #f2f2fe;
+
+    --box-shadow: 2px 2px 18px rgba(14, 52, 54, 0.15);
+    --transition: all 400ms ease;
+
+    --container-width-lg: 74%;
+    --container-width-md: 88%;
+    --form-width: 40%;
+
+    --card-border-radius-1: 0.3rem;
+    --card-border-radius-2: 0.5rem;
+    --card-border-radius-3: 0.8rem;
+    --card-border-radius-4: 2rem;
+    --card-border-radius-5: 5rem;
+}
+
+h1, h2, h3, h4, h5{
+    color: var(--text-color);
+    line-height: 1.3;
+}
+h2{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+
+/* ======================================================
+            BUTTON
+=========================================================*/
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--main-color);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+.btn.sm{
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+}
+
+.btn.danger{
+    background: var(--color-red);
+}
+
+.btn:hover{
+    background: var(--main-color);
+ 
+    color: var(--text-color);
+}
+
+/* ======================================================
+            GENERAL FORM
+=========================================================*/
+.form__section{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.form__section_cart{
+    display: grid;
+    place-items: center;
+    height: 85vh;
+}
+
+.form__section-container{
+    width: var(--form-width);
+}
+
+.alert__message{
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius-2);
+}
+
+.alert__message.error{
+    background: var(--color-red-light);
+    color: var(--color-red);
+}
+
+.alert__message.success{
+    background: var(--color-green-light);
+    color: var(--color-green);
+}
+
+.alert__message.lg{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form__control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form__control.inline{
+    flex-direction: row;
+    align-items: center;
+}
+
+input, textarea, select{
+    padding: 0.8rem 1.4rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius-2);
+    resize: none;
+    border: 1px solid;
+    color: var(--text-color);
+}
+
+.form__section span{
+    margin-top: 1rem;
+    display: block;
+}
+
+.form__section span a{
+    color: var(--main-color);
+}

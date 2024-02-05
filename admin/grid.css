@@ -1,0 +1,43 @@
+
+
+.graficos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 2.4rem;
+    padding: 20px 0 0 0;
+}
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto;
+}
+.graphBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    grid-gap: 30px;
+    max-height: 400px;
+}
+
+.graphBox .box{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+/* .graphBox .box:nth-child(2){
+    position: relative;
+    background: #222;
+    padding: 20px;
+    width: 400px;
+    height: 220px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+} */
